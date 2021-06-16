@@ -1,8 +1,8 @@
 class  Conta:
 
-  def __init__(self):
+  def __init__(self, numero, titular, saldo, limite):
     print("Contruindo objeto ... {}").format(self))
-    self.numero = 123
-    self.titular = "Nico"
-    self.saldo = 55.0
-    self.limite = 1000.0
+    self.numero = numero
+    self.titular = titular
+    self.saldo = saldo
+    self.limite = limite
