@@ -10,6 +10,7 @@ class  Conta:
   def extrato(self):
     print("Saldo de {} de titular {}".format(self.__saldo, self.__titular))
   
+  @property
   def deposita(self, valor):
     self.__saldo += valor
 
