@@ -10,25 +10,29 @@ class  Conta:
   def extrato(self):
     print("Saldo de {} de titular {}".format(self.__saldo, self.__titular))
   
-  @property
   def deposita(self, valor):
     self.__saldo += valor
 
   def saca(self, valor):
+    if(valor <= (self.__saldo + self.__limite))
     self.__saldo -= valor
 
   def transfere(self, valor, origem, destino):
     self.saca(valor)
     destino.deposita[valor]
 
-  def get_saldo(self):
+  @property
+  def saldo(self):
     return self.__saldo
   
-  def get_titular(self):
+  @property
+  def titular(self):
     return self.__titular
 
-  def get_limite(self):
+  @property
+  def limite(self):
     return self.__limite
 
-  def set_limite(self, limite):
+  @limite.setter
+  def limite(self, limite):
     self.__limite = limite
